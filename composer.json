@@ -5,5 +5,9 @@
     },
     "config": {
     "vendor-dir": "composer_vendor"
-}
+},
+"post-install-cmd": [
+     "php artisan clear-compiled",
+     "chmod -R 777 public/"
+ ]
 }
