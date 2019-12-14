@@ -5,7 +5,7 @@ import Main from './components/Main'
 
 let baseUrl = '';
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'development') {
   baseUrl = 'http://localhost:8888'
 } else {
   baseUrl = 'https://mighty-earth-87374.herokuapp.com/'
