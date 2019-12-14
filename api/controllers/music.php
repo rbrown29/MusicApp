@@ -1,11 +1,7 @@
 <?php
 
-header('Content-Type: applacation/json');
+header('Content-Type: application/json');
 include_once __DIR__. '/../models/music.php';
-
-if($_REQUEST['action'] === 'index') {
-	echo json_encode(Songs::all());
-}
 
 if($_REQUEST['action'] === 'index'){
     echo json_encode(Songs::all());
@@ -23,7 +19,7 @@ if($_REQUEST['action'] === 'index'){
 	echo json_encode($all_songs);
 	
 }elseif ($_REQUEST['action'] === 'delete'){ // delete
-    $all_songs = Song::delete($_REQUEST['id']);
+    $all_songs = Songs::delete($_REQUEST['id']);
     echo json_encode($all_songs);
 }
 
