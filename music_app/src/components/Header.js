@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
 
 class Header extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
-            <div>
-              this is the header
+            <div className='header'>
+              <h1>MusicApp</h1>
             </div>
         );
     }

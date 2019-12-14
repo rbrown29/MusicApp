@@ -1,28 +1,23 @@
 import React from 'react';
 import Header from './components/Header'
-import Nav from './components/Nav'
-import Side from './components/Side'
-import Songs from './components/Songs'
+import Main from './components/Main'
+import music from './data.js'
 
 class App extends React.Component{
   constructor(props){
     super(props)
     this.state = {
+      music:music,
+      }
+    }
 
+    render(){
+      return(
+        <>
+          <Header />
+          <Main music={this.state.music}/>
+        </>
+      )
     }
   }
-
-  render(){
-    return(
-      <>
-      <Header />
-      <Nav />
-      <Side />
-      <Songs />
-
-      </>
-    )
-  }
-}
-
 export default App;

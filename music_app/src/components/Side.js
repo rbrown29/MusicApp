@@ -7,8 +7,8 @@ class Side extends Component {
 
     render() {
         return (
-            <div>
-              this is the side
+            <div className='side'>
+              <h2>Your Favorites</h2>
             </div>
         );
     }
