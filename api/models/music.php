@@ -38,7 +38,7 @@ class Songs {
 	}
 	static function create($song){    //put
     	$query = "INSERT INTO songs (songName, artistName, coverArt, albumName) VALUES ($1, $2, $3, $4)";
-    	$query_params = array($gift->songName, $gift->artistName, $gift->coverArt, $gift->albumName);
+    	$query_params = array($song->songName, $song->artistName, $song->coverArt, $song->albumName);
     	pg_query_params($query, $query_params);
     	return self::all(); 
 	}
