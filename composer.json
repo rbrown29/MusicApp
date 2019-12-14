@@ -1,0 +1,9 @@
+{
+    "name": "richardbrown/music-app",
+    "require": {
+        "erusev/parsedown": "~1.0"
+    },
+    "config": {
+    "vendor-dir": "composer_vendor"
+}
+}
