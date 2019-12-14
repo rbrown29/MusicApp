@@ -1,7 +1,7 @@
 {
     "name": "richardbrown/music-app",
     "require": {
-        "erusev/parsedown": "~1.0"
+        "silex/silex": "~1.1"
     },
     "config": {
     "vendor-dir": "composer_vendor"
