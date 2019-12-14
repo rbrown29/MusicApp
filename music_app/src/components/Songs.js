@@ -8,10 +8,10 @@ class Songs extends Component {
     render() {
         return (
             <tr>
-              <td>{this.props.songs.song}</td>
-              <td>{this.props.songs.artist}</td>
-              <td>{this.props.songs.album}</td>
-              <td><img className='covers' src={this.props.songs.cover}/></td>
+              <td>{this.props.songs.songName}</td>
+              <td>{this.props.songs.artistName}</td>
+              <td>{this.props.songs.albumName}</td>
+              <td><img className='covers' src={this.props.songs.coverArt}/></td>
             </tr>
         );
     }
