@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 // $dbconn = pg_connect("host=localhost dbname=music");
 $dbconn = pg_connect(getenv("DATABASE_URL"));
 
