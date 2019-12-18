@@ -19,3 +19,18 @@ RewriteRule ^music/([0-9]+)$ controllers/music.php?action=delete&id=$1
 
 RewriteCond %{REQUEST_METHOD} ^OPTIONS$
 RewriteRule ^(.*)$ $1 [R=200,L]
+
+RewriteCond %{REQUEST_METHOD} ^GET$
+RewriteRule ^favorites$ controllers/favorites.php?action=index
+
+RewriteCond %{REQUEST_METHOD} ^POST$
+RewriteRule ^favorites$ controllers/favorites.php?action=post
+
+RewriteCond %{REQUEST_METHOD} ^PUT$
+RewriteRule ^favorites/([0-9]+)$ controllers/favorites.php?action=update&id=$1
+
+RewriteCond %{REQUEST_METHOD} ^DELETE$
+RewriteRule ^favorites/([0-9]+)$ controllers/favorites.php?action=delete&id=$1
+
+RewriteCond %{REQUEST_METHOD} ^OPTIONS$
+RewriteRule ^(.*)$ $1 [R=200,L]
